@@ -1,0 +1,21 @@
+package:
+  name: pglite
+  version: "0.1"
+
+source:
+  url: https://github.com/solidsnack/pglite/archive/57cd1aae53fb94c365f17f293f89c1ad79ea36e5.tar.gz
+  sha256: 0f229fdb69b031355e94a72f944aff2e6164264a3f439c3a24c93ebf106838f4
+
+build:
+  number: 0
+
+test:
+  commands:
+    - pglite --help
+
+about:
+  home: https://github.com/solidsnack/pglite
+  license: ISC
+  summary: 'A tiny shell script that manages ephemeral Postgres databases.'
+  license_family: Other
+  license_file: LICENSE
