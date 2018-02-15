@@ -1,19 +1,19 @@
 package:
   name: ucsc_tools
-  version: "332"
+  version: "357"
 
 build:
   number: 1
 
 requirements:
   run:
-    - ucsc-bedgraphtobigwig ==332
-    - ucsc-bedtobigbed ==332
-    - ucsc-fatotwobit ==332
-    - ucsc-liftover ==332
-    - ucsc-nibfrag ==332
-    - ucsc-twobittofa ==332
-    - ucsc-wigtobigwig ==332
+    - ucsc-bedgraphtobigwig ==357
+    - ucsc-bedtobigbed ==357
+    - ucsc-fatotwobit ==357
+    - ucsc-liftover ==357
+    - ucsc-nibfrag ==357
+    - ucsc-twobittofa ==357
+    - ucsc-wigtobigwig ==357
 
 test:
   commands:
