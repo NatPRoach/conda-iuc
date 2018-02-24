@@ -14,7 +14,7 @@ source $BASH_ENV
 # Make sure the CircleCI config is up to date.
 # add upstream as some semi-randomly named temporary remote to diff against
 UPSTREAM_REMOTE=__upstream__$(tr -dc a-z < /dev/urandom | head -c10)
-git remote add -t master $UPSTREAM_REMOTE https://github.com/bioconda/bioconda-recipes.git
+git remote add -t master $UPSTREAM_REMOTE https://github.com/galaxyproject/conda-iuc.git
 git fetch $UPSTREAM_REMOTE
 if ! git diff --quiet HEAD...$UPSTREAM_REMOTE/master -- .circleci/; then
     echo 'The CI configuration is out of date.'
@@ -59,6 +59,6 @@ if ! type bioconda-utils > /dev/null; then
     conda clean -y --all
 fi
 
-# Fetch the master branch for comparison (this can fail locally, if git remote 
+# Fetch the master branch for comparison (this can fail locally, if git remote
 # is configured via ssh and this is executed in a container).
 git fetch origin +master:master || true
